@@ -1,0 +1,26 @@
+; Experiment  6 External Interrupts
+; Siddhant Kedar Roll no. E-05
+
+	ORG	0000H
+	LJMP	MAIN
+
+	ORG	0013H		;ISR TF1
+	CPL	P2.5
+
+	
+	RETI
+
+
+
+	ORG	0040H
+MAIN:
+MOV IE,#84H ;enable INT1
+	
+
+Label:
+	MOV	A, #55H		;infinite loop
+	DEC	A
+	MOV	B, A
+	DEC	B
+	SJMP	Label
+
