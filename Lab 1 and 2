@@ -1,0 +1,27 @@
+;add
+MOV A,#3FH
+MOV R5,#7EH
+ADD A, R5
+MOV A, #8FH
+MOV R3,#6EH
+ADD A,R3
+END
+
+
+;sub
+MOV A,#52H
+MOV R2,#39H
+SUBB A,R2
+END
+
+;divide
+MOV A,#52H
+MOV R2,#39H
+SUBB A,R2
+END
+
+;mul
+MOV A,#52H
+MOV R2,#39H
+SUBB A,R2
+END
